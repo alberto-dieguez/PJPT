@@ -24,9 +24,9 @@ Heath Adams - Boss of TCM Security
 
 - TCM Sites:
   - [TCM Security](https://tcm-sec.com)
-  - [TCM Academy](htts://academy.tcm-sec.com)
-  - [TCM Certifications](htts://certifications.tcm-sec.com)
-  - [TCM Exams](htts://exams.tcmsecurity.com)
+  - [TCM Academy](https://academy.tcm-sec.com)
+  - [TCM Certifications](https://certifications.tcm-sec.com)
+  - [TCM Exams](https://exams.tcmsecurity.com)
 
 ![What We'll Cover](images/1.png)
 
