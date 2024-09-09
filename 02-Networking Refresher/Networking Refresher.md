@@ -75,10 +75,84 @@ It's important to note that MAC addresses are specific to the local network and 
 
 In summary, a MAC address is a unique identifier assigned to the network interface controller of a device. It is used at the data link layer to facilitate communication within a local network. MAC addresses are hardware-based, manufacturer-specific, and differ from IP addresses, which are used for network communication on a larger scale. **MAC Addres is in layer 2 (Data Link).**
 
+---
+
+## TCP, UDP, and the Three-Way Handshake
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two commonly used transport layer protocols in computer networks.
+
+TCP is a connection-oriented protocol that provides reliable, ordered, and error-checked delivery of data packets over an IP network. It guarantees that data sent from one device is received correctly by the destination device. TCP achieves this reliability through mechanisms like acknowledgement, retransmission, and flow control. It breaks data into smaller packets, assigns sequence numbers to them, and ensures they are reassembled correctly at the receiving end. TCP is widely used for applications that require guaranteed delivery, such as web browsing, email, file transfer, and remote login.
+
+UDP, on the other hand, is a connectionless protocol that does not provide the same level of reliability as TCP. It is simpler and more lightweight, making it suitable for applications that can tolerate some data loss or delay. UDP does not establish a connection or guarantee delivery of packets. It simply sends data packets from one device to another without waiting for acknowledgements or retransmissions. UDP is commonly used for real-time applications like streaming media, online gaming, DNS (Domain Name System), and VoIP (Voice over IP).
+
+The three-way handshake is a process used by TCP to establish a connection between two devices. It is a sequence of three steps that takes place before data transmission can begin. Here's how the three-way handshake works:
+
+ - SYN (Synchronize): The initiating device (often referred to as the client) sends a TCP packet with the SYN flag set to the destination device (often referred to as the server). This packet indicates the desire to establish a connection and includes an initial sequence number.
+
+ - SYN-ACK (Synchronize-Acknowledge): Upon receiving the SYN packet, the destination device responds with a TCP packet that has both the SYN and ACK (acknowledge) flags set. This packet acknowledges the receipt of the initial SYN packet and also includes its own initial sequence number.
+
+ - ACK (Acknowledge): Finally, the initiating device acknowledges the SYN-ACK packet by sending an ACK packet back to the destination. This packet confirms the establishment of the connection and typically contains an incremented sequence number.
+
+Once the three-way handshake is complete, the connection is established, and both devices are ready to exchange data. The sequence numbers exchanged during the handshake are used to ensure that data is transmitted and received in the correct order.
+
+In summary, TCP is a reliable, connection-oriented protocol that guarantees delivery of data, while UDP is a simpler, connectionless protocol that does not provide the same level of reliability. The three-way handshake is a process used by TCP to establish a connection between devices, involving the exchange of SYN, SYN-ACK, and ACK packets.
+
+---
+
+## Common Ports and Protocols
+
+Here are some commonly used ports and the protocols associated with them in computer networking:
+
+ - FTP (File Transfer Protocol): Port 21 (TCP)
+ - SSH (Secure Shell): Port 22 (TCP)
+ - Telnet: Port 23 (TCP)
+ - SMTP (Simple Mail Transfer Protocol): Port 25 (TCP)
+ - DNS (Domain Name System): Port 53 (TCP and UDP)
+ - HTTP (Hypertext Transfer Protocol): Port 80 (TCP)
+ - HTTPS (Hypertext Transfer Protocol Secure): Port 443 (TCP)
+ - DHCP (Dynamic Host Configuration Protocol): Port 67 (UDP) and Port 68 (UDP)
+ - POP3 (Post Office Protocol version 3): Port 110 (TCP)
+ - IMAP (Internet Message Access Protocol): Port 143 (TCP)
+ - SNMP (Simple Network Management Protocol): Port 161 (UDP)
+ - RDP (Remote Desktop Protocol): Port 3389 (TCP)
+ - NTP (Network Time Protocol): Port 123 (UDP)
+ - SMB (Server Message Block): Port 445 (TCP)
+ - FTPS (FTP over SSL/TLS): Port 990 (TCP)
+ - TFTP (Trivial File Transfer Protocol): Port 69 (UDP)
+ - LDAP (Lightweight Directory Access Protocol): Port 389 (TCP and UDP)
+ - MySQL: Port 3306 (TCP)
+ - RDP (Remote Desktop Protocol): Port 3389 (TCP)
+
+Please note that some protocols use both TCP and UDP, depending on the specific functionality and requirements. Additionally, these port assignments are not exhaustive, and other applications and services may use different ports as well.
+
+---
+
+## The OSI Model
+
+Please
+Do
+Not
+Throw
+Sausage
+Pizza
+Away
+
+The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer has specific responsibilities and interacts with the layers above and below it. The OSI model provides a structured approach to understanding and designing network protocols and communication systems. Here's a brief overview of each layer:
+
+ 1. Physical Layer: The physical layer is responsible for the transmission and reception of raw unstructured data bits over a physical medium. It defines the electrical, mechanical, and functional characteristics of the physical interface between devices. Data cables...
+ 2. Data Link Layer: The data link layer handles the reliable transmission of data frames between directly connected nodes over a physical link. It provides error detection and correction, flow control, and handles access to the physical medium. Ethernet, Wi-Fi, and PPP (Point-to-Point Protocol) are examples of data link layer protocols. Mac addresses...
+ 3. Network Layer: The network layer enables the routing of data packets across different networks. It deals with logical addressing and determines the best path for data delivery based on network conditions and routing protocols. The IP (Internet Protocol) is a key network layer protocol.
+ 4. Transport Layer: The transport layer ensures the reliable and orderly delivery of data between end systems. It breaks data into smaller segments, manages end-to-end communication, and provides error recovery, flow control, and congestion control. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) operate at this layer.
+ 5. Session Layer: The session layer establishes, manages, and terminates communication sessions between applications. It provides synchronization and dialog control mechanisms to enable seamless communication between devices. This layer also handles session checkpointing and recovery.
+ 6. Presentation Layer: The presentation layer is responsible for data representation, encryption, compression, and formatting. It ensures that data sent by the application layer of one system is understandable by the application layer of another system. This layer deals with data syntax and semantics. JPEG, MOV...
+ 7. Application Layer: The application layer is the closest layer to the end-user and provides services directly to user applications. It includes protocols for various application-level services such as file transfer, email, web browsing, and remote access. Examples of protocols at this layer include HTTP, SMTP, FTP, and DNS. HTTP, SMTP...
+
+The key idea behind the OSI model is to separate the complex task of network communication into manageable layers, with each layer focused on specific functions. This modular approach facilitates interoperability, ease of implementation, and troubleshooting in network systems.
+
+It's important to note that the OSI model is a conceptual model and does not necessarily reflect the exact implementation of all networking systems, which often use a hybrid of various layers and protocols. However, the OSI model remains a useful reference for understanding network communication and protocols.
 
 
-### Subheading 1
-Detailed information, explanations, or examples related to the key points.
+
 
 ### Subheading 2
 Additional information or expanded details as needed.
