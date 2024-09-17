@@ -140,6 +140,9 @@ Away
 
 The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer has specific responsibilities and interacts with the layers above and below it. The OSI model provides a structured approach to understanding and designing network protocols and communication systems. Here's a brief overview of each layer:
 
+
+![OSI MODEL](images/1.jpg)
+
  1. Physical Layer: The physical layer is responsible for the transmission and reception of raw unstructured data bits over a physical medium. It defines the electrical, mechanical, and functional characteristics of the physical interface between devices. Data cables...
  2. Data Link Layer: The data link layer handles the reliable transmission of data frames between directly connected nodes over a physical link. It provides error detection and correction, flow control, and handles access to the physical medium. Ethernet, Wi-Fi, and PPP (Point-to-Point Protocol) are examples of data link layer protocols. Mac addresses...
  3. Network Layer: The network layer enables the routing of data packets across different networks. It deals with logical addressing and determines the best path for data delivery based on network conditions and routing protocols. The IP (Internet Protocol) is a key network layer protocol.
@@ -154,12 +157,12 @@ It's important to note that the OSI model is a conceptual model and does not nec
 
 ## Subnetting Part 1
 
-## Resources for this Video
+### Resources for this Video
 
 - [Seven Second Subnetting](https://www.youtube.com/watch?v=ZxAwQB8TZsM)
 - [Subnet Guide](https://drive.google.com/file/d/1ETKH31-E7G-7ntEOlWGZcDZWuukmeHFe/view)
 
-## Subnetting
+### Subnetting
 
 Subnetting is the process of dividing a network into smaller subnetworks called subnets. It allows for more efficient use of IP addresses and facilitates network management and routing. Subnetting is commonly used in IPv4 networks.
 
@@ -191,36 +194,7 @@ CIDR notation provides a concise way to represent networks and subnets by specif
 [Subneting Part 1 - PJPT - XLS](https://docs.google.com/spreadsheets/d/1FaBcov7XzjIo-VH-ZRrZUr8IOLIhe8UOPbXxEyRyUHE/edit?usp=sharing)
 
 
-### Subheading 2
-Additional information or expanded details as needed.
+## Configure VBox
 
----
-
-## Action Items
-- [ ] **Action 1:** Description of what needs to be done.
-- [ ] **Action 2:** Description of what needs to be done.
-
----
-
-## Table
-| Header 1    | Header 2    | Header 3    |
-|-------------|-------------|-------------|
-| Row 1, Col 1| Row 1, Col 2| Row 1, Col 3|
-| Row 2, Col 1| Row 2, Col 2| Row 2, Col 3|
-| Row 3, Col 1| Row 3, Col 2| Row 3, Col 3|
-
----
-
-## References
-- [Reference 1](URL): Description of the reference.
-- [Reference 2](URL): Description of the reference.
-
----
-
-## Summary
-Summarize the main takeaways from the notes.
-
----
-
-**Notes:**
-- Any additional comments or observations.
+Install extensions.
+Modify Network, add NAT (NatNetwork) configure IP like 192.168.57.0/24. Modify this for all VMs.
